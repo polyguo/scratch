@@ -43,7 +43,10 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    Leave a message:<br>     
+
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+          Leave a message:<br>     
     <input type="text" ng-model="newMessage">
     <input type="submit" ng-click="add()" value="new message">
     <br>
@@ -53,8 +56,6 @@
         {{message}}
       </li>
     </ul>
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
         <h3>Welcome to GitHub Pages.</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
